@@ -22,6 +22,7 @@ const nextConfig = {
     parallelServerCompiles: true,
   },
   output: "export",
+  distDir: "out",
   basePath: "/panchayat-samiti",
   assetPrefix: "/panchayat-samiti/",
 };
