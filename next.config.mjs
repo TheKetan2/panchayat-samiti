@@ -13,18 +13,13 @@ const nextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+  output: "export",
   images: {
     unoptimized: true,
   },
-  experimental: {
-    webpackBuildWorker: true,
-    parallelServerBuildTraces: true,
-    parallelServerCompiles: true,
-  },
-  output: "export",
-  distDir: "out",
   basePath: "/panchayat-samiti",
   assetPrefix: "/panchayat-samiti/",
+  trailingSlash: true,
 };
 
 mergeConfig(nextConfig, userConfig);
