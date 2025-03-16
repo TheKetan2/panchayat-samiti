@@ -14,7 +14,7 @@ interface MapProps {
 }
 
 // Dynamically import Leaflet with no SSR to fix window is not defined error
-const MapComponent = dynamic(() => import("@/app/components/MapComponent"), {
+const MapComponent = dynamic(() => import("./MapComponent"), {
   ssr: false,
   loading: () => (
     <div className="flex items-center justify-center h-[400px] bg-gray-100">
