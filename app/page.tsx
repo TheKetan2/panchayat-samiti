@@ -63,7 +63,7 @@ export default function Home() {
         <div className="container flex h-16 items-center justify-between px-4 md:px-6">
           <div className="flex items-center gap-2">
             <Image
-              src={`${basePath}/placeholder.svg?height=40&width=40`}
+              src="/placeholder.svg"
               alt="Panchayat Samiti Logo"
               width={40}
               height={40}

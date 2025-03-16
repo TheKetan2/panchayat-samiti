@@ -16,15 +16,9 @@ const nextConfig = {
   output: "export",
   images: {
     unoptimized: true,
-    remotePatterns: [
-      {
-        protocol: "https",
-        hostname: "**",
-      },
-    ],
   },
-  basePath: "",
-  assetPrefix: "",
+  basePath: "/panchayat-samiti",
+  assetPrefix: "/panchayat-samiti",
   trailingSlash: true,
 };
 
