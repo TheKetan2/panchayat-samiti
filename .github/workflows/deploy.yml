@@ -31,7 +31,12 @@ jobs:
         run: npm install --legacy-peer-deps
 
       - name: Build
-        run: npm run build
+        env:
+          NEXT_PUBLIC_BASE_PATH: /panchayat-samiti
+        run: |
+          npm run build
+          touch out/.nojekyll
+          echo "panchayatsamiti.com" > out/CNAME
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

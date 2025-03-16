@@ -23,8 +23,8 @@ const nextConfig = {
       },
     ],
   },
-  basePath: "/panchayat-samiti",
-  assetPrefix: "/panchayat-samiti",
+  basePath: "",
+  assetPrefix: "",
   trailingSlash: true,
 };
 

@@ -30,6 +30,8 @@ import {
 import Map from "@/app/components/Map";
 import AboutDialog from "@/app/components/AboutDialog";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export default function Home() {
   const [fontSize, setFontSize] = useState(100); // 100% is the default font size
 
@@ -61,7 +63,7 @@ export default function Home() {
         <div className="container flex h-16 items-center justify-between px-4 md:px-6">
           <div className="flex items-center gap-2">
             <Image
-              src="/placeholder.svg?height=40&width=40"
+              src={`${basePath}/placeholder.svg?height=40&width=40`}
               alt="Panchayat Samiti Logo"
               width={40}
               height={40}
