@@ -4,20 +4,15 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
+  base: "/panchayat-samiti/",
   server: {
     host: "::",
     port: 8080,
   },
-  plugins: [
-    // Temporarily use regular React plugin instead of SWC
-    // react(),
-    mode === 'development' &&
-    componentTagger(),
-  ].filter(Boolean),
+  plugins: [mode === "development" && componentTagger()].filter(Boolean),
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
   },
 }));
-

@@ -1,2 +1,3 @@
-npm install -D @swc/core
-npm install -D @swc/helpers
+git add .
+git commit -m "Configure GitHub Pages deployment"
+git push
