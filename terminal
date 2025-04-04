@@ -1,0 +1,2 @@
+npm install -D @swc/core
+npm install -D @swc/helpers
